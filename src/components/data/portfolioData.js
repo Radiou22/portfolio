@@ -1,12 +1,10 @@
 export const portfolioData = [
     {
         imgSrc: 'https://i.imgur.com/0kmoEjX.png',
-        title: 'Astronomie',
+        title: 'Astronomy',
         skills: ['React', 'Tailwind'],
         description:
-            'Refonte complète du site du Club Astro Véga de la Lyre de Boisredon. Le site permet de découvrir l\'association,' +
-            ' consulter le calendrier des réunions, explorer les galeries photo, accéder à des liens utiles liés à l’astronomie' +
-            ' et à la météo, et contacter facilement le club pour une inscription ou des informations.',
+            'A complete redesign of the website for the Club Astro Véga de la Lyre de Boisredon. Visitors can learn about the club, check the meeting calendar, browse photo galleries, find astronomy and weather resources, and contact the club to join or ask a question.',
         anim: 'fade-right',
     },
     {
@@ -14,10 +12,7 @@ export const portfolioData = [
         title: 'Railclock',
         skills: ['Typescript', 'React', 'CSS'],
         description:
-            'Railclock est une alternative à SNCF Connect, pensée pour offrir une expérience utilisateur simplifiée et plus fluide. ' +
-            'Développée en groupe, l\'application permet de rechercher facilement des horaires de trains, consulter les correspondances, ' +
-            'et organiser ses trajets grâce à une interface épurée, rapide et centrée sur l\'essentiel : trouver son train en quelques clics,' +
-            ' sans superflu.',
+            'Railclock is a team-built alternative to SNCF Connect. It makes it easy to look up train times, check connections, and plan journeys through a simple interface designed to help users find the right train quickly.',
         demoURL: '',
         repoURL: '',
         anim: 'fade-left',
@@ -27,10 +22,7 @@ export const portfolioData = [
         title: 'Crabank',
         skills: ['React', 'MUI', 'Csharp'],
         description:
-            'Crabank est une application web complète simulant les fonctionnalités d’une vraie banque en ligne. Elle permet aux utilisateurs ' +
-            'de gérer leurs comptes, consulter leurs soldes, effectuer des virements, suivre leurs transactions et bien plus encore.' +
-            ' L’objectif était de recréer une expérience bancaire fluide, sécurisée et accessible depuis n’importe quel navigateur, avec une interface' +
-            ' moderne et intuitive.',
+            'Crabank is a web app that simulates online banking. Users can manage their accounts, check balances, make transfers, and track transactions. The goal was to recreate a smooth, secure banking experience with a modern interface that works in any browser.',
         demoURL: '',
         repoURL: '',
         anim: 'fade-left',
@@ -40,10 +32,7 @@ export const portfolioData = [
         title: 'Le Cube',
         skills: ['React', 'MUI'],
         description:
-            'Le Cube est un site web dédié à un serveur Minecraft, conçu pour offrir une expérience enrichie aux joueurs. Il permet de lier' +
-            ' son compte Minecraft au site et d’accéder à un tableau de bord complet : statistiques détaillées (distance parcourue, morts, ' +
-            'connexions, temps de jeu…), profil personnalisé, et une page “amis” pour voir qui est en ligne et sur quel mode de jeu. Une passerelle' +
-            ' entre le jeu et le web pour suivre ses performances et sa communauté en temps réel.',
+            'Le Cube is a website for a Minecraft server. Players can link their Minecraft accounts, see stats such as distance traveled, deaths, logins, and playtime, and customize their profiles. A friends page shows who is online and what game mode they are playing.',
         anim: 'fade-left',
     },
     {
@@ -51,9 +40,7 @@ export const portfolioData = [
         title: 'ClimatRPG',
         skills: ['Python'],
         description:
-            'ClimatRPG est un jeu 2D développé en Python par une équipe de 3 personnes. Il s\'agit d\'un jeu de combat en 1 contre 1, où le joueur peut incarner l’un des trois ' +
-            'types de personnages : mage (plus de mana), guerrier (plus de défense) ou assassin (plus de dégâts).\n' +
-            'Les combats se déclenchent en s\'approchant de l\'adversaire sur une carte exploratoire où il est aussi possible de trouver des coffres et des objets.',
+            'ClimatRPG is a 2D game built in Python by a team of three. In one-on-one battles, players choose between a mage with more mana, a warrior with stronger defense, and an assassin who deals more damage. Players can explore the map, find chests and items, and start a fight by approaching an opponent.',
         demoURL: '',
         repoURL: '',
         anim: 'fade-right',
@@ -63,10 +50,7 @@ export const portfolioData = [
         title: 'Nitroterm',
         skills: ['React', 'Csharp', 'Tailwind'],
         description:
-            'Nitroterm est un réseau social web inspiré de Twitter, pensé pour les passionnés de l’informatique et du développement. Chaque ' +
-            'utilisateur peut créer un compte, publier des posts, réagir (like, dislike, commentaire, partage), et suivre d’autres profils pour' +
-            ' enrichir son fil d’actualité. La plateforme permet aussi d’indiquer ses langages ou technologies préférées, créant ainsi un espace' +
-            ' d’échange ciblé pour la communauté tech.',
+            'Nitroterm is a social network inspired by Twitter for people interested in computing and software development. Users can create accounts, publish posts, like, dislike, comment on and share posts, and follow other profiles. They can also list their favorite programming languages or technologies.',
         anim: 'fade-up',
     },
     {
@@ -74,7 +58,8 @@ export const portfolioData = [
         title: 'PigeonShooter',
         showAfterExpand: true,
         skills: ['Csharp', 'HTML', 'JavaScript'],
-        description: 'Jeu d’arcade en 2D où il faut viser des pigeons en plein vol, faire monter son score et gérer ses vies et ses bombes. Développé en C# avec Exclaim, avec une version bureau et une version web en WebAssembly.',
+        description:
+            'A 2D arcade game where players aim at flying pigeons, build up their score, and manage their lives and bombs. Built in C# with Exclaim, with desktop and WebAssembly versions.',
     },
     {
         imgSrc: `${import.meta.env.BASE_URL}img/minecraft-guessr.png`,
@@ -82,7 +67,8 @@ export const portfolioData = [
         showAfterExpand: true,
         pixelArt: true,
         skills: ['Typescript', 'React', 'Csharp', 'CSS', 'HTML'],
-        description: 'Chaque jour, quatre ingrédients de Minecraft sont proposés. Le but est de découvrir toutes les recettes possibles en les plaçant sur une grille de fabrication 3 × 3 et de marquer des points au classement mondial. Interface React et API ASP.NET Core.',
+        description:
+            'Each day, players get four Minecraft ingredients and try to discover every possible recipe on a 3 × 3 crafting grid. Successful discoveries earn points on a global leaderboard. The game uses a React frontend and an ASP.NET Core API.',
     },
 ];
 

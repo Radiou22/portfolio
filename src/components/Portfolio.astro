@@ -13,14 +13,14 @@ const additionalProjects = getPortfolioData.filter((project) => project.showAfte
         class="flex flex-col w-full  justify-center items-center h-auto min-h-[100dvh]  "
 >
     <div class="portfolio__container">
-        <Title container="Projets" margin="5%" />
+        <Title container="Projects" margin="5%" />
         <div class="portfolio__elements">
             {visibleProjects.map((props) => <Card {...props} />)}
         </div>
         <details class="more-projects">
             <summary>
-                <span class="more-label">Voir plus</span>
-                <span class="less-label">Voir moins</span>
+                <span class="more-label">Show more</span>
+                <span class="less-label">Show less</span>
             </summary>
             <div class="portfolio__elements">
                 {additionalProjects.map((props) => <Card {...props} />)}
