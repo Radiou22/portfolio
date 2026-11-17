@@ -4,7 +4,7 @@ export const mainMenu = [
     {link:"#projets", content:"Projets", icon:"carbon:portfolio"},
 ]
 export const menuBlog = [
-    {link:"/", content:"Home", icon:"lucide:home"},
-    {link:"/#about", content:"About", icon:"octicon:person-24"},
-    {link:"/#projets", content:"Projets", icon:"carbon:portfolio"},
+    {link:`${import.meta.env.BASE_URL}`, content:"Home", icon:"lucide:home"},
+    {link:`${import.meta.env.BASE_URL}#about`, content:"About", icon:"octicon:person-24"},
+    {link:`${import.meta.env.BASE_URL}#projets`, content:"Projets", icon:"carbon:portfolio"},
 ]
