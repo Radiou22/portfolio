@@ -1,18 +1,5 @@
 export const portfolioData = [
     {
-        imgSrc: `${import.meta.env.BASE_URL}img/pigeon-shooter.png`,
-        title: 'PigeonShooter',
-        skills: ['Csharp', 'HTML', 'JavaScript'],
-        description: 'Jeu d’arcade en 2D où il faut viser des pigeons en plein vol, faire monter son score et gérer ses vies et ses bombes. Développé en C# avec Exclaim, avec une version bureau et une version web en WebAssembly.',
-    },
-    {
-        imgSrc: `${import.meta.env.BASE_URL}img/minecraft-guessr.png`,
-        title: 'MinecraftGuessr',
-        pixelArt: true,
-        skills: ['Typescript', 'React', 'Csharp', 'CSS', 'HTML'],
-        description: 'Chaque jour, quatre ingrédients de Minecraft sont proposés. Le but est de découvrir toutes les recettes possibles en les plaçant sur une grille de fabrication 3 × 3 et de marquer des points au classement mondial. Interface React et API ASP.NET Core.',
-    },
-    {
         imgSrc: 'https://i.imgur.com/0kmoEjX.png',
         title: 'Astronomie',
         skills: ['React', 'Tailwind'],
@@ -81,7 +68,22 @@ export const portfolioData = [
             ' enrichir son fil d’actualité. La plateforme permet aussi d’indiquer ses langages ou technologies préférées, créant ainsi un espace' +
             ' d’échange ciblé pour la communauté tech.',
         anim: 'fade-up',
-    }
+    },
+    {
+        imgSrc: `${import.meta.env.BASE_URL}img/pigeon-shooter.png`,
+        title: 'PigeonShooter',
+        showAfterExpand: true,
+        skills: ['Csharp', 'HTML', 'JavaScript'],
+        description: 'Jeu d’arcade en 2D où il faut viser des pigeons en plein vol, faire monter son score et gérer ses vies et ses bombes. Développé en C# avec Exclaim, avec une version bureau et une version web en WebAssembly.',
+    },
+    {
+        imgSrc: `${import.meta.env.BASE_URL}img/minecraft-guessr.png`,
+        title: 'MinecraftGuessr',
+        showAfterExpand: true,
+        pixelArt: true,
+        skills: ['Typescript', 'React', 'Csharp', 'CSS', 'HTML'],
+        description: 'Chaque jour, quatre ingrédients de Minecraft sont proposés. Le but est de découvrir toutes les recettes possibles en les plaçant sur une grille de fabrication 3 × 3 et de marquer des points au classement mondial. Interface React et API ASP.NET Core.',
+    },
 ];
 
 const skillIcons = {

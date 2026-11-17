@@ -2,9 +2,10 @@
 import Title from './atoms/Title.astro';
 import { getPortfolioData} from "@/components/data/portfolioData.js"
 import Card from './card-portfolio/CardPortfolio.astro';
-import Boton from "./atoms/Boton.astro";
 import "../styles/global.css"
 
+const visibleProjects = getPortfolioData.filter((project) => !project.showAfterExpand);
+const additionalProjects = getPortfolioData.filter((project) => project.showAfterExpand);
 ---
 
 <section
@@ -14,15 +15,58 @@ import "../styles/global.css"
     <div class="portfolio__container">
         <Title container="Projets" margin="5%" />
         <div class="portfolio__elements">
-            {getPortfolioData.map((props) => <Card {...props} />)}
+            {visibleProjects.map((props) => <Card {...props} />)}
         </div>
-        <div class="flex justify-center m-16 max-w-full px-3">
-            <Boton texto="Voir plus"/>
-        </div>
+        <details class="more-projects">
+            <summary>
+                <span class="more-label">Voir plus</span>
+                <span class="less-label">Voir moins</span>
+            </summary>
+            <div class="portfolio__elements">
+                {additionalProjects.map((props) => <Card {...props} />)}
+            </div>
+        </details>
     </div>
 </section>
 
 <style>
+    .more-projects {
+        margin: 4rem 0;
+    }
+
+    .more-projects summary {
+        width: max-content;
+        margin: 0 auto;
+        padding: 1.1rem 2.2rem;
+        border-radius: 100px;
+        background: var(--primary);
+        color: var(--primary-90);
+        font-size: var(--text-x-large);
+        cursor: pointer;
+        list-style: none;
+    }
+
+    .more-projects summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .more-projects summary:hover {
+        opacity: 0.7;
+    }
+
+    .more-projects .less-label,
+    .more-projects[open] .more-label {
+        display: none;
+    }
+
+    .more-projects[open] .less-label {
+        display: inline;
+    }
+
+    .more-projects .portfolio__elements {
+        margin-top: 3rem;
+    }
+
     .portfolio__elements {
         max-width: var(--max-width);
         display: flex;
